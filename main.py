@@ -10,7 +10,7 @@ def get_artciles_by_category(category):
     query_parameters = {
         "category": category,
         "sortBy": "top",
-        "country": "gb",
+        "country": "us",
         "apiKey": API_KEY
     }
     return _get_articles(query_parameters)
@@ -57,8 +57,9 @@ def get_sources_by_category(category):
 
 
 if __name__ == "__main__":
-    #print(f"Getting news for {argv[2]}...\n")
-    #get_artciles_by_category(argv[2])
-    #print(f"Successfully retrieved top {argv[2]} headlines")
+    
+    #print(f"Getting news for {argv[1]}...\n")
+    #get_artciles_by_category(argv[1])
+    #print(f"Successfully retrieved top {argv[1]} headlines")
     #get_artciles_by_query("Elon Musk")
-    get_sources_by_category("technology")
+    get_sources_by_category("business")
